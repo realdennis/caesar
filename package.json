@@ -1,0 +1,21 @@
+{
+  "name": "caesar",
+  "version": "1.0.0",
+  "description": "Caesar is a helper library to manipulate CSS Variable like JavaScript Object.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "microbundle && rm -rf ./.rts2_cache_*",
+    "prepublishOnly": "yarn build"
+  },
+  "keywords": [
+    "css",
+    "css3",
+    "css-variable",
+    "caesar"
+  ],
+  "author": "realdennis",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  }
+}
