@@ -16,6 +16,13 @@ Caesar is a **developer-friendly** library for CSS3 variables get & set.
 $ npm install @realdennis/caesar
 ```
 
+or script tag 
+
+```html
+<script src="https://unpkg.com/@realdennis/caesar@1.0.2/dist/index.umd.js"></script>
+```
+Note it will assign to `window.caesar`, just a little bit different from `Caesar` in document. 
+
 ## Usage
 
 Only two methods `Caesar.assign` & `Caesar.query`, the below is usage.
