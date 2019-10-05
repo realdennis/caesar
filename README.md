@@ -1,14 +1,18 @@
 <div align="center">
-<h1>Caesar</h1></br>
-<br/>
-<quote>"THIS IS THE LAST OF MY HAMON! TAKE IT!"</quote> <p>by Caesar Anthonio Zeppeli</p>
-
+<h1>Caesar</h1>
+</br>
+<quote>"THIS IS THE LAST OF MY HAMON! TAKE IT!"</quote>
+<p>by Caesar Anthonio Zeppeli</p>
+<a href="https://www.npmjs.com/package/@realdennis/caesar">
+<img src="https://media.giphy.com/media/11TN3gkseh4Vos/source.gif" alt="Joseph Joestar Cry"/>
+</a>
 </div>
+</br>
 
 Caesar is a **developer-friendly** library for CSS3 variables get & set.
 
-- Set CSS variables by `Caesar.assign` method like `Object.assign`.
-- Get CSS variable value by name using `Caesar.query`.
+- Set CSS variables by `caesar.assign` method like `Object.assign`.
+- Get CSS variable value by name using `caesar.query`.
 
 ## Install
 
@@ -19,19 +23,18 @@ $ npm install @realdennis/caesar
 or script tag 
 
 ```html
-<script src="https://unpkg.com/@realdennis/caesar@1.0.2/dist/index.umd.js"></script>
+<script src="https://unpkg.com/@realdennis/caesar@1.0.3/dist/index.umd.js"></script>
 ```
-Note it will assign to `window.caesar`, just a little bit different from `Caesar` in document. 
 
 ## Usage
 
-Only two methods `Caesar.assign` & `Caesar.query`, the below is usage.
+Only two methods `caesar.assign` & `caesar.query`, the below is usage.
 
 ```javascript
-import Caesar from "@realdennis/caesar";
+import caesar from "@realdennis/caesar";
 
 const el = document.querySelector("div.container");
-Caesar.assign(el, {
+caesar.assign(el, {
   duration: "2s",
   delay: "1.5s",
   height: "20px"
@@ -45,7 +48,7 @@ Caesar.assign(el, {
  ** }
  **
  */
-const { duration, height } = Caesar.query(el, ["duration", "height"]);
+const { duration, height } = caesar.query(el, ["duration", "height"]);
 console.log(duration); // "2s"
 console.log(height); // "20px"
 ```
@@ -57,11 +60,11 @@ console.log(height); // "20px"
 - Each query return would be `string` type, though you assign in `number` type.
 example:
 ```javascript
-Caesar.assign(el, {
+caesar.assign(el, {
   containerTop: 20,
   containerBottom:10
 });
-const top = Caesar.query(el,['containerTop']).containerTop;
+const top = caesar.query(el,['containerTop']).containerTop;
 console.log(typeof top); // string
 ```
 
