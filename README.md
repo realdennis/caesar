@@ -14,6 +14,8 @@ Caesar is a **developer-friendly** library for CSS3 variables get & set.
 - Set CSS variables by `caesar.assign` method like `Object.assign`.
 - Get CSS variable value by name using `caesar.query`.
 
+[Demo](https://codepen.io/realdennis/pen/YzzzORR)
+
 ## Install
 
 ```sh
