@@ -22,10 +22,10 @@ Caesar is a **developer-friendly** library for CSS3 variables get & set.
 $ npm install @realdennis/caesar
 ```
 
-or script tag 
+or script tag
 
 ```html
-<script src="https://unpkg.com/@realdennis/caesar@1.0.3/dist/index.umd.js"></script>
+<script src="https://unpkg.com/@realdennis/caesar@1.0.4/dist/index.umd.js"></script>
 ```
 
 ## Usage
@@ -33,13 +33,13 @@ or script tag
 Only two methods `caesar.assign` & `caesar.query`, the below is usage.
 
 ```javascript
-import caesar from "@realdennis/caesar";
+import caesar from '@realdennis/caesar';
 
-const el = document.querySelector("div.container");
+const el = document.querySelector('div.container');
 caesar.assign(el, {
-  duration: "2s",
-  delay: "1.5s",
-  height: "20px"
+  duration: '2s',
+  delay: '1.5s',
+  height: '20px'
 });
 /* Now the container style would be like below
  ** div.container{
@@ -50,7 +50,7 @@ caesar.assign(el, {
  ** }
  **
  */
-const { duration, height } = caesar.query(el, ["duration", "height"]);
+const { duration, height } = caesar.query(el, ['duration', 'height']);
 console.log(duration); // "2s"
 console.log(height); // "20px"
 ```
@@ -58,17 +58,19 @@ console.log(height); // "20px"
 ## Note
 
 - When variable does not exist, it'll return empty string (default value is '').
-- Caesar **CANNOT** get the initial CSS variable value in stylesheet. 
+- Caesar **CANNOT** get the initial CSS variable value in stylesheet.
 - Each query return would be `string` type, though you assign in `number` type.
-example:
+  example:
+
 ```javascript
 caesar.assign(el, {
   containerTop: 20,
-  containerBottom:10
+  containerBottom: 10
 });
-const top = caesar.query(el,['containerTop']).containerTop;
+const top = caesar.query(el, ['containerTop']).containerTop;
 console.log(typeof top); // string
 ```
+
 - If you are using `typescript` and `querySelector`, it'll get `Element` type, please type assertion `as HTMLElement`.
 - Full document will coming soon...
 

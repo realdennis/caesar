@@ -1,6 +1,6 @@
 {
   "name": "@realdennis/caesar",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Caesar is a helper library to manipulate CSS Variable like JavaScript Object.",
   "author": "realdennis",
   "license": "MIT",
@@ -8,13 +8,13 @@
   "typings": "dist/index.d.ts",
   "umd:main": "dist/index.umd.js",
   "module": "dist/index.mjs",
-  "source": "src/index.ts",  
+  "source": "src/index.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "microbundle && rm -rf ./.rts2_cache_*",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "yarn build"
   },
   "repository": {
     "type": "git",
