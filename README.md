@@ -69,6 +69,8 @@ caesar.assign(el, {
 const top = caesar.query(el,['containerTop']).containerTop;
 console.log(typeof top); // string
 ```
+- If you are using `typescript` and `querySelector`, it'll get `Element` type, please type assertion `as HTMLElement`.
+- Full document will coming soon...
 
 ---
 
