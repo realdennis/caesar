@@ -6,14 +6,23 @@
 <a href="https://www.npmjs.com/package/@realdennis/caesar">
 <img src="https://media.giphy.com/media/11TN3gkseh4Vos/source.gif" alt="Joseph Joestar Cry"/>
 </a>
+
+<a href="https://github.com/realdennis/caesar/blob/master/LICENSE">
+  <img src="https://img.shields.io/github/license/realdennis/caesar.svg" alt="License" />
+</a>
+<a href="https://www.npmjs.com/package/@realdennis/caesar">
+   <img src="https://img.shields.io/npm/dm/@realdennis/caesar.svg" alt="npm downloads" />
+</a>
+<a href="https://github.com/realdennis/caesar/stargazers">
+   <img src="https://img.shields.io/github/stars/realdennis/caesar.svg" alt="GitHub Stars" />
+</a>
+<a href="https://travis-ci.org/realdennis/caesar">
+   <img src="https://travis-ci.org/realdennis/caesar.svg?branch=master" alt="Build Status" />
+</a>
+    
+    
 </div>
 </br>
-
-[![GitHub license](https://img.shields.io/github/license/realdennis/caesar.svg)](https://github.com/realdennis/caesar/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/realdennis/caesar.svg)](https://github.com/realdennis/caesar/issues)
-[![GitHub stars](https://img.shields.io/github/stars/realdennis/caesar.svg)](https://github.com/realdennis/caesar/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/realdennis/caesar.svg)](https://github.com/realdennis/caesar/network)
-[![Build Status](https://travis-ci.org/realdennis/caesar.svg?branch=master)](https://travis-ci.org/realdennis/caesar)
 
 Caesar is a **developer-friendly** library for CSS3 variables get & set.
 
