@@ -9,6 +9,12 @@
 </div>
 </br>
 
+[![GitHub license](https://img.shields.io/github/license/realdennis/caesar.svg)](https://github.com/realdennis/caesar/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/realdennis/caesar.svg)](https://github.com/realdennis/caesar/issues)
+[![GitHub stars](https://img.shields.io/github/stars/realdennis/caesar.svg)](https://github.com/realdennis/caesar/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/realdennis/caesar.svg)](https://github.com/realdennis/caesar/network)
+[![Build Status](https://travis-ci.org/realdennis/caesar.svg?branch=master)](https://travis-ci.org/realdennis/caesar)
+
 Caesar is a **developer-friendly** library for CSS3 variables get & set.
 
 - Set CSS variables by `caesar.assign` method like `Object.assign`.
