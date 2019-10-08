@@ -6,7 +6,7 @@
 <a href="https://www.npmjs.com/package/@realdennis/caesar">
 <img src="https://media.giphy.com/media/11TN3gkseh4Vos/source.gif" alt="Joseph Joestar Cry"/>
 </a>
-
+</br>
 <a href="https://github.com/realdennis/caesar/blob/master/LICENSE">
   <img src="https://img.shields.io/github/license/realdennis/caesar.svg" alt="License" />
 </a>
@@ -19,8 +19,6 @@
 <a href="https://travis-ci.org/realdennis/caesar">
    <img src="https://travis-ci.org/realdennis/caesar.svg?branch=master" alt="Build Status" />
 </a>
-    
-    
 </div>
 </br>
 
