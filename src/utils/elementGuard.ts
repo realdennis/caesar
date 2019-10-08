@@ -1,3 +1,4 @@
+import isFunction from './isFunction';
 const elementGuard = (el: HTMLElement) => {
   if (!(el instanceof HTMLElement)) {
     throw new Error(`[Caesar] ${el} is not an element.`);
@@ -7,7 +8,7 @@ const elementGuard = (el: HTMLElement) => {
       el &&
       el.style &&
       el.style.setProperty &&
-      el.style.setProperty instanceof Function
+      isFunction(el.style.setProperty)
     )
   ) {
     // Defensive check setProperty method is callable
