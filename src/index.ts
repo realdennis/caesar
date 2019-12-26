@@ -1,25 +1,26 @@
-import elementGuard from './utils/elementGuard';
-const VERSION = 1.0;
-interface CssVarObj {
+export const VERSION = 1.1;
+interface customProperties {
   [name: string]: string | number;
 }
 
-const assign: (el: HTMLElement, varObj: CssVarObj) => void = (el, varObj) => {
-  elementGuard(el);
-  Object.keys(varObj).forEach(name => {
-    const value = String(varObj[name]);
+export const assign: (el: HTMLElement, customProperties: customProperties) => void = (
+  el,
+  customProperties
+) => {
+  Object.keys(customProperties).forEach(name => {
+    const value = String(customProperties[name]);
     el.style.setProperty(`--${name}`, value);
   });
 };
 
-const query: (el: HTMLElement, names: [string]) => CssVarObj = (el, names) => {
-  elementGuard(el);
+export const query: (el: HTMLElement, names: string[]) => customProperties = (
+  el,
+  names
+) => {
   return names
     .map(name => {
       const varObj = { [name]: el.style.getPropertyValue(`--${name}`) };
       return varObj;
     })
-    .reduce((prev, next) => Object.assign({}, prev, next)) as CssVarObj;
+    .reduce((prev, next) => Object.assign({}, prev, next)) as customProperties;
 };
-
-export default { assign, query, _version: VERSION };

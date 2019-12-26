@@ -1,4 +1,4 @@
-import caesar from "../index";
+import * as caesar from "../index";
 import "@testing-library/jest-dom/extend-expect";
 
 const getElement: () => HTMLElement = () => {
