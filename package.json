@@ -15,7 +15,7 @@
   "scripts": {
     "build": "rimraf dist/ && rollup -c",
     "test": "jest",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn test && yarn build"
   },
   "repository": {
     "type": "git",
