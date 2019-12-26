@@ -3,10 +3,10 @@ interface customProperties {
   [name: string]: string | number;
 }
 
-export const assign: (el: HTMLElement, customProperties: customProperties) => void = (
-  el,
-  customProperties
-) => {
+export const assign: (
+  el: HTMLElement,
+  customProperties: customProperties
+) => void = (el, customProperties) => {
   Object.keys(customProperties).forEach(name => {
     const value = String(customProperties[name]);
     el.style.setProperty(`--${name}`, value);
@@ -24,3 +24,8 @@ export const query: (el: HTMLElement, names: string[]) => customProperties = (
     })
     .reduce((prev, next) => Object.assign({}, prev, next)) as customProperties;
 };
+
+export const queryOne: (el: HTMLElement, name: string) => customProperties = (
+  el,
+  name
+) => query(el, [name]);

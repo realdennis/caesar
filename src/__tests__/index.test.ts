@@ -15,7 +15,7 @@ const getElement: () => HTMLElement = () => {
   return el;
 };
 
-test("Assign should be work", () => {
+test("assign(el,{}) should work", () => {
   const el = getElement();
   expect(el.style.getPropertyValue("--foo")).toBe("");
   caesar.assign(el, {
@@ -24,9 +24,16 @@ test("Assign should be work", () => {
   expect(el.style.getPropertyValue("--foo")).toBe("bar");
 });
 
-test("Query should be work", () => {
+test("query(el,[names]) should work", () => {
   const el = getElement();
   el.style.setProperty("--foo", "bar");
   const { foo } = caesar.query(el, ["foo"]);
+  expect(foo).toBe("bar");
+});
+
+test("queryOne(el,name) should work", () => {
+  const el = getElement();
+  el.style.setProperty("--foo", "bar");
+  const { foo } = caesar.queryOne(el, "foo");
   expect(foo).toBe("bar");
 });

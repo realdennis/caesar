@@ -43,10 +43,10 @@ or script tag
 
 ## Usage
 
-Only two methods `caesar.assign` & `caesar.query`, the below is usage.
+Only two methods `caesar.assign` & `caesar.query` & `caesar.queryOne`, the below is usage.
 
 ```javascript
-import caesar from '@realdennis/caesar';
+import * as  caesar from '@realdennis/caesar';
 
 const el = document.querySelector('div.container');
 caesar.assign(el, {
@@ -64,8 +64,10 @@ caesar.assign(el, {
  **
  */
 const { duration, height } = caesar.query(el, ['duration', 'height']);
+const { delay } = caesar.queryOne(el,'delay');
 console.log(duration); // "2s"
 console.log(height); // "20px"
+console.log(delay); // "1.5s"
 ```
 
 ## Note
@@ -80,7 +82,7 @@ caesar.assign(el, {
   containerTop: 20,
   containerBottom: 10
 });
-const top = caesar.query(el, ['containerTop']).containerTop;
+const { containerTop:top } = caesar.query(el, ['containerTop']);
 console.log(typeof top); // string
 ```
 
