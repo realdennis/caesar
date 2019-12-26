@@ -1,6 +1,6 @@
 {
   "name": "@realdennis/caesar",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Caesar is a helper library to manipulate CSS Variable like JavaScript Object.",
   "author": "realdennis",
   "license": "MIT",
